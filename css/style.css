@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f7f7f7;
+}
+
+header h1 {
+  color: #333;
+}
+
+#task-list li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
