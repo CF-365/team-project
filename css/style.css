@@ -13,3 +13,21 @@ header h1 {
   font-size: 18px;
   margin-bottom: 8px;
 }
+#add-task-form {
+  margin-top: 20px;
+}
+
+#new-task-input {
+  padding: 6px;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+#add-task-btn {
+  padding: 6px 12px;
+  font-size: 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
