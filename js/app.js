@@ -15,5 +15,12 @@ addTaskBtn.addEventListener("click", function () {
     li.textContent = taskText;
     taskList.appendChild(li);
     newTaskInput.value = "";
+    // Mark task complete feature
+const existingTasks = document.querySelectorAll("#task-list li");
+existingTasks.forEach(function (task) {
+  task.addEventListener("click", function () {
+    task.classList.toggle("completed");
+  });
+});
   }
 });
