@@ -24,4 +24,11 @@ taskList.addEventListener("click", function (event) {
     event.target.classList.toggle("completed");
   }
 });
-  
+  // Clear completed tasks feature
+const clearCompletedBtn = document.getElementById("clear-completed-btn");
+clearCompletedBtn.addEventListener("click", function () {
+  const completedTasks = document.getElementsByClassName("completed");
+  for (let i = 0; i < completedTasks.length; i++) {
+    completedTasks[i].remove();
+  }
+});
