@@ -15,6 +15,7 @@ addTaskBtn.addEventListener("click", function () {
     li.textContent = taskText;
     taskList.appendChild(li);
     newTaskInput.value = "";
+    updateCounter();
   }
 });
 
@@ -31,6 +32,7 @@ clearCompletedBtn.addEventListener("click", function () {
   completedTasks.forEach(function (task) {
     task.remove();
   });
+  updateCounter();
 });
 // Mark priority feature
 const priorityTasks = document.querySelectorAll("#task-list li");
@@ -41,3 +43,10 @@ for (let i = 0; i < priorityTasks.length; i++) {
     currentTask.classList.toggle("priority");
   });
 }
+// Task counter feature
+const taskCounter = document.getElementById("task-counter");
+function updateCounter() {
+  const remaining = document.querySelectorAll("#task-list li").length;
+  taskCounter.textContent = remaining + " tasks remaining";
+}
+updateCounter();

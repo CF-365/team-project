@@ -48,3 +48,7 @@ header h1 {
   border-left: 4px solid gold;
   padding-left: 8px;
 }
+#task-counter {
+  font-weight: bold;
+  color: #444;
+}
