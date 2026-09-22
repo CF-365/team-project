@@ -34,8 +34,8 @@ clearCompletedBtn.addEventListener("click", function () {
 });
 // Mark priority feature
 const priorityTasks = document.querySelectorAll("#task-list li");
-for (var i = 0; i < priorityTasks.length; i++) {
-  var currentTask = priorityTasks[i];
+for (let i = 0; i < priorityTasks.length; i++) {
+  let currentTask = priorityTasks[i];
   currentTask.addEventListener("contextmenu", function (event) {
     event.preventDefault();
     currentTask.classList.toggle("priority");
