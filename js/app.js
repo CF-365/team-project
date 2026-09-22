@@ -57,7 +57,7 @@ const totalPreview = document.getElementById("total-preview");
 
 previewBtn.addEventListener("click", function () {
   const currentCount = document.querySelectorAll("#task-list li").length;
-  const planned = plannedInput.value;
+  const planned = Number(plannedInput.value);
   const total = currentCount + planned;
   totalPreview.textContent = "You will have " + total + " tasks total.";
 });
