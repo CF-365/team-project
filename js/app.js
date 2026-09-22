@@ -32,3 +32,12 @@ clearCompletedBtn.addEventListener("click", function () {
     task.remove();
   });
 });
+// Mark priority feature
+const priorityTasks = document.querySelectorAll("#task-list li");
+for (let i = 0; i < priorityTasks.length; i++) {
+  let currentTask = priorityTasks[i];
+  currentTask.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+    currentTask.classList.toggle("priority");
+  });
+}
